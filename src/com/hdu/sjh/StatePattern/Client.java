@@ -4,7 +4,7 @@ package com.hdu.sjh.StatePattern;
 public class Client {
     public static void main(String[] args) {
         Context context = new Context();
-        context.changeState("A");
+        context.setState(new ConcreteStateA());
         context.request();
         context.changeState("B");
         context.request();
